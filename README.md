@@ -73,3 +73,37 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Resources
 
 [React Bootstrap](https://react-bootstrap.github.io/components/cards/)
+
+### Workflow
+
+Number and name of feature: #01 Display images
+
+Estimate of time needed to complete: 5 minutes
+
+Start time: 2:00pm
+
+Finish time: 2:12pm
+
+Actual time needed to complete: 12 minutes.
+---
+
+Number and name of feature: #2 Allow users to vote on thier favorite beast
+
+Estimate of time needed to complete: 20 min
+
+Start time: 2:25PM
+
+Finish time: 2:56PM
+
+Actual time needed to complete: 31 min
+---
+
+Number and name of feature: #03 Bootstrap
+
+Estimate of time needed to complete: 30min
+
+Start time: 3:00PM
+
+Finish time: 3:47PM
+
+Actual time needed to complete: 45min
