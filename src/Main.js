@@ -1,23 +1,28 @@
 import React from "react";
 import HornedBeast from "./HornedBeast.js";
-import Narwhal from "./Narwhal.jpg"
-import Rhino from "./rhino.PNG"
+import './Main.css'
 
 
 class Main extends React.Component {
   render() {
+    let beasts = [];
+    this.props.data.forEach((beast, index) => {
+      beasts.push(
+        <HornedBeast
+        key = {index}
+        title = {beast.title}
+        imgURL = {beast.image_url}
+        description = {beast.description}
+        horns = {beast.horns}
+        keyword = {beast.keyword}
+        />
+      )
+    })
     return (
-      <>
-      <HornedBeast src = {Narwhal}
-      title = "UniWhal" 
-      description = "A unicorn and a narwhal nuzzling their horns" keyword = "narwhal"/>
-      <HornedBeast src= {Rhino}
-      title = "Rhino Binos"
-      description = "Parent rhino with two babies"
-      keyword = "rhino"
-      />
-      </>
-    )
+      <main>
+        {beasts}
+      </main>
+    );
   }
 }
 export default Main;
