@@ -33,7 +33,6 @@ class HornedBeast extends React.Component {
           <ListGroup className="beast-horns">
             <ListGroup.Item>Number of Horns: {this.props.horns}</ListGroup.Item>
             <ListGroup.Item onClick={this.handleLikes}>I like this!</ListGroup.Item>
-
           </ListGroup>
         </Card>
         
