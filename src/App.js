@@ -10,8 +10,11 @@ class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-    showModal: true,
-    img: '',
+    showModal: false,
+    title: '',
+    imgURL: '',
+    keyword:'',
+    description:'',
     }
   }
   hideModal= () => {
@@ -19,10 +22,16 @@ class App extends React.Component {
       showModal: false,
     })
   }
-  showModal= () => {
+  showModal= (title, imgURL, keyword, description) => {
     this.setState({
       showModal: true,
+      title: title,
+      imgURL: imgURL,
+      keyword: keyword,
+      description: description,
+      
     })
+    console.log(this.state.imgURL)
   }
   render() {
     return (
@@ -35,7 +44,10 @@ class App extends React.Component {
           <SelectedBeast
           hideModal = {this.hideModal}
           showModal={this.state.showModal}
-
+          title={this.state.title}
+          imgURL={this.state.imgURL}
+          keyword={this.state.keyword}
+          description={this.state.description}
           />
       </>
     )
