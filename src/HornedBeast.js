@@ -17,7 +17,7 @@ class HornedBeast extends React.Component {
       })
     }
     handleGetImg = () => {
-      this.props.showModal(this.props.imgURL)
+      this.props.showModal(<img src={this.props.imgURL} alt={this.props.keyword}/>)
     }
   render() {
     return (
@@ -30,7 +30,7 @@ class HornedBeast extends React.Component {
           <Card.Img
           src={this.props.imgURL} 
           alt={this.props.keyword}
-          onclick={this.handleGetImg}/>
+          onClick={this.handleGetImg}/>
           <Card.Body>
           <Card.Title className="card-title">{this.props.title}</Card.Title>
           </Card.Body>
