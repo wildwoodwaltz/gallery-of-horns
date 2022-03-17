@@ -1,6 +1,8 @@
-import React from "react";
+import React from 'react';
 import Modal from 'react-bootstrap/Modal'
 import './SelectedBeast.css'
+
+
 
 
 class SelectedBeast extends React.Component {
@@ -11,13 +13,13 @@ class SelectedBeast extends React.Component {
           show={this.props.showModal}
           onClick={this.props.hideModal}
         >
-          <Modal.Header closeButton>{this.props.title}</Modal.Header>
+          <Modal.Header closeButton>{this.props.beast.title}</Modal.Header>
           <Modal.Body
             onClick={this.props.hideModal}
-            containerClassName="modal"
+            containerclassname='modal'
           >
-            <img class="modalImage" src={this.props.imgURL} alt={this.props.keyword} />
-            <p>{this.props.description}</p>
+            <img src={this.props.beast.image_url} alt={this.props.beast.keyword} />
+            <p>{this.props.beast.description}</p>
           </Modal.Body>
         </Modal>
       </>

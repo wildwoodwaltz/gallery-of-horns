@@ -1,11 +1,18 @@
-import React from "react";
-import HornedBeast from "./HornedBeast.js";
+import React from 'react';
+import HornedBeast from './HornedBeast.js';
 import './Main.css'
 
 
 class Main extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+    showModal: false,
+    beastList: this.props.data,
+    }
+  }
   render() {
-    let beasts = this.props.data.map((beast, index) => {
+    let beasts = this.state.beastList.map((beast, index) => {
       return(
         <HornedBeast
         key = {index}
@@ -15,6 +22,7 @@ class Main extends React.Component {
         horns = {beast.horns}
         keyword = {beast.keyword}
         showModal = {this.props.showModal}
+        beast = {beast}
         />
       )
     })
