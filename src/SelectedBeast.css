@@ -1,0 +1,13 @@
+.modal-header {
+background-color: aliceblue;
+}
+
+.modal-body {
+  background-color: aliceblue;
+}
+.modalImage {
+  width: 100%;
+  border-radius: 2vw;
+  background-color: aliceblue;
+  border: 1px solid black;
+}

@@ -74,6 +74,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 [React Bootstrap](https://react-bootstrap.github.io/components/cards/)
 
+Thanks to Ella and Liesl for helping me with Model styling! 
+
+
 ### Workflow
 
 Number and name of feature: #01 Display images
@@ -85,6 +88,7 @@ Start time: 2:00pm
 Finish time: 2:12pm
 
 Actual time needed to complete: 12 minutes.
+
 ---
 
 Number and name of feature: #2 Allow users to vote on thier favorite beast
@@ -107,3 +111,15 @@ Start time: 3:00PM
 Finish time: 3:47PM
 
 Actual time needed to complete: 45min
+
+---
+
+Number and name of feature: #04 Display A Model
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 1:35PM
+
+Finish time: 6:13pm
+
+Actual time needed to complete: 4hr 40min

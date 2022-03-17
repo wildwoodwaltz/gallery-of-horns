@@ -16,12 +16,21 @@ class HornedBeast extends React.Component {
         liked: this.state.liked + 1
       })
     }
+    handleGetImg = () => {
+      this.props.showModal(this.props.title, this.props.imgURL, this.props.keyword, this.props.description)
+    }
   render() {
     return (
       <>
-        <Card>
+        <Card
+        border="dark"
+        >
           <Card.Header>&#10084; {this.state.liked} &#10084;</Card.Header>
-          <Card.Img src={this.props.imgURL} alt={this.props.keyword}/>
+          <Card.Img
+          onClick={this.handleGetImg}
+          src={this.props.imgURL} 
+          alt={this.props.keyword}
+          />
           <Card.Body>
           <Card.Title className="card-title">{this.props.title}</Card.Title>
           </Card.Body>
