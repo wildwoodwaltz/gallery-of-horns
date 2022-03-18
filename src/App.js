@@ -1,20 +1,18 @@
-import React from "react";
+import React from 'react';
 import Header from './Header.js';
 import Main from './Main.js';
 import Footer from './Footer.js';
 import './App.css';
 import data from './data.json';
-import SelectedBeast from "./SelectedBeast.js";
+import SelectedBeast from './SelectedBeast.js';
+
 
 class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
     showModal: false,
-    title: '',
-    imgURL: '',
-    keyword:'',
-    description:'',
+    beast: {},
     }
   }
   hideModal= () => {
@@ -22,17 +20,13 @@ class App extends React.Component {
       showModal: false,
     })
   }
-  showModal= (title, imgURL, keyword, description) => {
+  showModal = (object) => {
     this.setState({
       showModal: true,
-      title: title,
-      imgURL: imgURL,
-      keyword: keyword,
-      description: description,
-      
+      beast: object,
     })
-    console.log(this.state.imgURL)
   }
+
   render() {
     return (
       <>
@@ -44,10 +38,8 @@ class App extends React.Component {
           <SelectedBeast
           hideModal = {this.hideModal}
           showModal={this.state.showModal}
-          title={this.state.title}
-          imgURL={this.state.imgURL}
-          keyword={this.state.keyword}
-          description={this.state.description}
+          beast = {this.state.beast}
+          horns = {this.state.horns}
           />
       </>
     )

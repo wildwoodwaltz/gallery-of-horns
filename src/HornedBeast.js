@@ -8,7 +8,7 @@ class HornedBeast extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      liked: 0
+      liked: 0,
     }
   }
     handleLikes = () => {
@@ -17,7 +17,7 @@ class HornedBeast extends React.Component {
       })
     }
     handleGetImg = () => {
-      this.props.showModal(this.props.title, this.props.imgURL, this.props.keyword, this.props.description)
+      this.props.showModal(this.props.beast);
     }
   render() {
     return (
@@ -27,7 +27,7 @@ class HornedBeast extends React.Component {
         >
           <Card.Header>&#10084; {this.state.liked} &#10084;</Card.Header>
           <Card.Img
-          onClick={this.handleGetImg}
+          onClick = {this.handleGetImg}
           src={this.props.imgURL} 
           alt={this.props.keyword}
           />
