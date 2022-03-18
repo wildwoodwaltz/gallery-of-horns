@@ -123,3 +123,15 @@ Start time: 1:35PM
 Finish time: 6:13pm
 
 Actual time needed to complete: 4hr 40min
+
+---
+
+Number and name of feature: #05 Sort by Horns
+
+Estimate of time needed to complete: 1hr 20min
+
+Start time: 2:10PM
+
+Finish time: 5:17PM
+
+Actual time needed to complete: 3hr 7min
