@@ -6,6 +6,7 @@ import './App.css';
 import data from './data.json';
 import SelectedBeast from './SelectedBeast.js';
 
+
 class App extends React.Component {
   constructor(props){
     super(props);
@@ -25,6 +26,7 @@ class App extends React.Component {
       beast: object,
     })
   }
+
   render() {
     return (
       <>
@@ -37,6 +39,7 @@ class App extends React.Component {
           hideModal = {this.hideModal}
           showModal={this.state.showModal}
           beast = {this.state.beast}
+          horns = {this.state.horns}
           />
       </>
     )
